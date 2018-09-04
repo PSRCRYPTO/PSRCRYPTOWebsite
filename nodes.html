@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" onload="hidePushi()">
+<head onload="hidePushi()">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/ropr.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>PSR CRYPTO's Web Terminal</title>
+    <script type="text/javascript" charset="utf-8" src="nodejs/basic.js"></script><!-- Thanks to Joshua Bell -->
+    <script type="text/javascript" charset="utf-8" src="nodejs/os.js"></script>
+    <script type="text/javascript" charset="utf-8" src="nodejs/shell.js"></script>
+    <script type="text/javascript" charset="utf-8" src="nodejs/ropr.js"></script>
+    
+    <style>
+    
+        
+    </style>
+    
+    <script>
+        
+        
+        function hidePushi() {
+            var x = document.getElementById("pushi");
+        }
+        
+        function showlocation1() {
+            if(this.value=="See More") {
+                this.value="Hide";
+                document.getElementById("widow_douglas").style.visibility="visible";
+                document.getElementById("widowdouglas").innerHTML="Hide"
+            } else {
+                this.value="See More";
+                document.getElementById("widow_douglas").style.visibility="hidden";
+                document.getElementById("widowdouglas").innerHTML="See More"
+            }
+        }
+        
+    </script>
+    <div class="admin"></div>
+</head>
+<body onload="hidePushi()">
+<pre>
+<div id="buffer">
+<div>
+</div>
+<span id=cursor></span>
+<div id="pushi">
+    <iframe id="pushi" style="border:none;visibility: hidden" src="https://explorer.pushiplay.pw/address/PRmvpFYpnoDm1bBfgPdTFzbSUUUEMB9MAG"></iframe>
+</div>
+</div>
+</pre>
+</body>
+</html>
