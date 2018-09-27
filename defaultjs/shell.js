@@ -44,7 +44,9 @@ var classShell = function() {
         {pattern: /^THERMONUCLEARWAR/i, parser: 'gtnw' },
         {pattern: /^GLOBAL THERMONUCLEAR WAR/i, parser: 'gtnw' },
         {pattner: /^GLOBALTHERMONUCLEAR WAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBAL THERMONUCLEARWAR/i, parser: 'gtnw' }
+        {pattern: /^GLOBAL THERMONUCLEARWAR/i, parser: 'gtnw' },
+        {pattern: /^BEFRANK/i, parser: 'comBefrank' },
+        {pattern: /^BEFRANK ADMIN/i, parser: 'comBefrankAdmin' }
     ];
 
 };
@@ -82,16 +84,19 @@ classShell.prototype.comScreen = function( args ) {
         case 3:
             this.comRaven();
             break;
-        case 4:
-            this.comNodes();
+        case 4;
+            this.comBefrank();
             break;
         case 5:
-            this.comNanda();
+            this.comNodes();
             break;
         case 6:
-            this.wopr();
+            this.comNanda();
             break;
         case 7:
+            this.wopr();
+            break;
+        case 8:
             this.gtnw();
             break;
         default:
@@ -199,6 +204,14 @@ classShell.prototype.comAbout = function() {
 
 };
 
+classShell.prototype.comBefrank = function() {
+
+    window.open("http://befrank.psrcrypto.com","_self");
+
+    this.prompt();
+
+};
+
 classShell.prototype.comNanda = function() {
 
     window.open("nanda.html","_self");
@@ -221,6 +234,7 @@ classShell.prototype.admin = function() {
         ' ',
         'TURTLE ADMIN',
         'RAVEN ADMIN',
+        'BEFRANK ADMIN',
         ' '
     ])
 
@@ -247,6 +261,14 @@ classShell.prototype.comTurtleAdmin = function() {
 classShell.prototype.comRavenAdmin = function() {
 
     window.open("http://pool.raven.psrcrypto.com:8000/admin","_self");
+
+    this.prompt();
+
+};
+
+classShell.prototype.comBefrankAdmin = function() {
+
+    window.open("http://befrank.psrcrypto.com/admin.html","_self");
 
     this.prompt();
 
