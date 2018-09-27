@@ -205,9 +205,11 @@ classShell.prototype.comAbout = function() {
 };
 
 classShell.prototype.comBefrank = function() {
-
-    window.open("http://befrank.psrcrypto.com","_self");
-
+    
+    window.open("http://befrank.psrcrypto.com","_self"); 
+    OS. output.pushBuffer([
+        ' '
+    ])
     this.prompt();
 
 };
@@ -244,7 +246,7 @@ classShell.prototype.admin = function() {
 
 classShell.prototype.comDiscord = function() {
 
-    window.open("https://discordapp.com","_self");
+    window.open("https://discord.gg/xGBtgWv","_self");
 
     this.prompt();
 
