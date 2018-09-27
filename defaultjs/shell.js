@@ -44,9 +44,7 @@ var classShell = function() {
         {pattern: /^THERMONUCLEARWAR/i, parser: 'gtnw' },
         {pattern: /^GLOBAL THERMONUCLEAR WAR/i, parser: 'gtnw' },
         {pattner: /^GLOBALTHERMONUCLEAR WAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBAL THERMONUCLEARWAR/i, parser: 'gtnw' },
-        {pattern: /^BEFRANK/i, parser: 'comBefrank' },
-        {pattern: /^BEFRANK ADMIN/i, parser: 'comBefrankAdmin' }
+        {pattern: /^GLOBAL THERMONUCLEARWAR/i, parser: 'gtnw' }
     ];
 
 };
@@ -84,19 +82,16 @@ classShell.prototype.comScreen = function( args ) {
         case 3:
             this.comRaven();
             break;
-        case 4;
-            this.comBefrank();
-            break;
-        case 5:
+        case 4:
             this.comNodes();
             break;
-        case 6:
+        case 5:
             this.comNanda();
             break;
-        case 7:
+        case 6:
             this.wopr();
             break;
-        case 8:
+        case 7:
             this.gtnw();
             break;
         default:
@@ -226,7 +221,6 @@ classShell.prototype.admin = function() {
         ' ',
         'TURTLE ADMIN',
         'RAVEN ADMIN',
-        'BEFRANK ADMIN',
         ' '
     ])
 
@@ -236,7 +230,7 @@ classShell.prototype.admin = function() {
 
 classShell.prototype.comDiscord = function() {
 
-    window.open("https://discord.gg/xGBtgWv","_self");
+    window.open("https://discordapp.com","_self");
 
     this.prompt();
 
@@ -258,14 +252,6 @@ classShell.prototype.comRavenAdmin = function() {
 
 };
 
-classShell.prototype.comBefrankAdmin = function() {
-
-    window.open("http://befrank.psrcrypto.com/admin.html","_self");
-
-    this.prompt();
-
-};
-
 classShell.prototype.comContact = function() {
     OS.output.pushBuffer([
         'D.O.D. PENSION FILES INDICATE CURRENT MAILING AS: ',
@@ -281,16 +267,6 @@ classShell.prototype.comContact = function() {
 classShell.prototype.comTurtle = function() {
 
     window.open("http://turtle.psrcrypto.com","_self"); 
-    OS. output.pushBuffer([
-        ' '
-    ])
-    this.prompt();
-
-};
-
-classShell.prototype.comBefrank = function() {
-    
-    window.open("http://befrank.psrcrypto.com","_self"); 
     OS. output.pushBuffer([
         ' '
     ])
