@@ -204,16 +204,6 @@ classShell.prototype.comAbout = function() {
 
 };
 
-classShell.prototype.comBefrank = function() {
-    
-    window.open("http://befrank.psrcrypto.com","_self"); 
-    OS. output.pushBuffer([
-        ' '
-    ])
-    this.prompt();
-
-};
-
 classShell.prototype.comNanda = function() {
 
     window.open("nanda.html","_self");
@@ -291,6 +281,16 @@ classShell.prototype.comContact = function() {
 classShell.prototype.comTurtle = function() {
 
     window.open("http://turtle.psrcrypto.com","_self"); 
+    OS. output.pushBuffer([
+        ' '
+    ])
+    this.prompt();
+
+};
+
+classShell.prototype.comBefrank = function() {
+    
+    window.open("http://befrank.psrcrypto.com","_self"); 
     OS. output.pushBuffer([
         ' '
     ])
